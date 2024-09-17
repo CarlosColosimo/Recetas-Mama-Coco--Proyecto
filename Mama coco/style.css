@@ -107,7 +107,14 @@ header ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1em;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el zoom y la sombra */
 }
+
+.receta:hover {
+    transform: scale(1.05); /* Aplica el zoom a toda la tarjeta */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para dar efecto de profundidad */
+}
+
 
 .receta img {
     width: 100%;
