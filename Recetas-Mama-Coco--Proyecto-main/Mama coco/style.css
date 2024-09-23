@@ -26,7 +26,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 3em; 
-    background-color: white;
+    background-color: orange;
     z-index: 1000;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -63,13 +63,27 @@ header ul li a {
 }
 
 header ul li a:hover {
-    color: #ff6b6b;
+    color: white;
 }
+
+.boton {
+    color: #f4f4f4;
+    background-color: #e16f11;
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 1, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el zoom y la sombra */
+}
+
+.boton:hover {
+    transform: scale(1.05); /* Aplica el zoom a toda la tarjeta */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para dar efecto de profundidad */
+}
+
 
 .separador {
     width: 100%;
     height: 6px; 
-    background-color: #ff6b6b;
+    background-color:  #e16f11;
     margin-top: 100px; 
     z-index: 1000;
 }
