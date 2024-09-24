@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3em; 
+    background-color: orange;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    width: 250px; 
+    height: 100px;
+}
+
+header .logo img {
+    height: 80px; 
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li {
+    margin-left: 25px; 
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 15px 25px; 
+    color: #333;
+    font-size: 20px; 
+    transition: 0.3s ease;
+    display: block;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+header ul li a:hover {
+    color: white;
+}
+
+.boton {
+    color: #f4f4f4;
+    background-color: #e16f11;
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 1, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el zoom y la sombra */
+}
+
+.boton:hover {
+    transform: scale(1.05); /* Aplica el zoom a toda la tarjeta */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para dar efecto de profundidad */
+}
+
+
+.separador {
+    width: 100%;
+    height: 6px; 
+    background-color:  #e16f11;
+    margin-top: 100px; 
+    z-index: 1000;
+}
+
+.recetas {
+    margin-top: 120px; 
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f4f4f4; /* Fondo claro para destacar el formulario */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+.container {
+    max-width: 400px; /* Limitar el ancho del formulario */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+form {
+    background: white; /* Fondo blanco para el formulario */
+    padding: 2em; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para el formulario */
+}
+
+label {
+    display: block; /* Asegura que cada etiqueta ocupe su propia línea */
+    margin: 15px 0 5px; /* Espaciado entre la etiqueta y el input */
+    color: #333; /* Color del texto */
+    font-size: 1.1em; /* Tamaño de fuente más grande */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 0px; /* Espaciado entre los inputs */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de fuente */
+}
+
+input[type="checkbox"] {
+    margin-left: 10px; /* Espacio a la izquierda del checkbox */
+}
+
+.button-container {
+    display: flex; /* Usar flexbox para alinear los botones */
+    justify-content: space-between; /* Espaciado entre los botones */
+}
+
+.boton01 {
+    padding: 12px 20px; /* Espaciado interno de los botones */
+    background-color: #e16f11; /* Color de fondo de los botones */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    font-size: 1em; /* Tamaño de fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boton01:hover {
+    transform: scale(1.05); /* Aplica el zoom a toda la tarjeta */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para dar efecto de profundidad */
+}
+
+.infocontacto {
+    padding: 3em;
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+.infocontacto .contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.infocontacto .logofooter {
+    width: 250px; 
+    margin-bottom: 1em;
+}
+
+.infocontacto .logofooter img {
+    width: 100%;
+}
+
+.infocontacto .informacion ul {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.infocontacto .informacion ul li {
+    margin-bottom: 12px;
+    font-size: 18px; 
+    color: #333;
+}
+
+.infocontacto .informacion ul li i {
+    margin-right: 10px;
+    color: #ff6b6b;
+}
+
+.input-container {
+    margin-bottom: 20px; /* Espacio entre los campos */
+}
+
+.input-wrapper {
+    display: flex; /* Usar flexbox para alinear el ícono y el input */
+    align-items: center; /* Centrar verticalmente */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+}
+
+.input-wrapper i {
+    margin-right: 10px; /* Espacio entre el ícono y el input */
+    color: #666; /* Color del ícono */
+}
+
+input[type="text"],
+input[type="password"] {
+    border: none; /* Sin borde en el input */
+    outline: none; /* Sin contorno al hacer clic */
+    flex: 1; /* Permitir que el input ocupe el resto del espacio */
+    font-size: 1em; /* Tamaño de fuente */
+}
