@@ -1,0 +1,32 @@
+.receta-detallada {
+    padding: 2em;
+    margin: 2em auto; /* Centra el contenido */
+    max-width: 800px; /* Limita el ancho */
+    background-color: #f9f9f9; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 120px; /* Agrega un margen superior para separación */
+}
+
+.receta-detallada h1 {
+    font-size: 2.5em; /* Tamaño del título */
+    color: #333; /* Color del texto */
+    margin-bottom: 0.5em; /* Espaciado inferior */
+}
+
+.receta-detallada h2 {
+    font-size: 1.8em; /* Tamaño del subtítulo */
+    color: #e16f11; /* Color del subtítulo */
+    margin-top: 1.5em; /* Espaciado superior */
+}
+
+.receta-detallada ol {
+    margin-top: 1em; /* Espaciado superior */
+    padding-left: 1.5em; /* Espaciado izquierdo */
+    color: #555; /* Color del texto de la lista */
+}
+
+.receta-detallada ol li {
+    margin-bottom: 1em; /* Espaciado entre los pasos */
+    font-size: 1.2em; /* Tamaño del texto */
+}
