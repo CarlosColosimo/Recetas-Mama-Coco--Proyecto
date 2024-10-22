@@ -7,6 +7,7 @@ import Login from './components/Login';
 import GuiaUsuario from './components/GuiaUsuario';
 import RecetaDetallada from './components/RecetaDetallada'; // Importa el nuevo componente
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Register from './components/Register';
 
 
 function App() {
@@ -19,10 +20,14 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/manual" element={<GuiaUsuario />} />
           <Route path="/receta/:nombre" element={<RecetaDetallada />} /> {/* Nueva ruta para la receta detallada */}
+          <Route path="/" element={<Login />} />
+        <Route path="/registrar" element={<Register />} />
+        <Route path="/dashboard" element={<div>Dashboard</div>} /> {/* Agrega tu componente de Dashboard aquí */}
         </Routes>
         <Footer />
       </div>
     </Router>
+    
   );
 }
 

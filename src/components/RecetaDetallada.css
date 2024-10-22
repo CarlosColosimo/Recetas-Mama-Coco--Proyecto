@@ -24,9 +24,22 @@
     margin-top: 1em; /* Espaciado superior */
     padding-left: 1.5em; /* Espaciado izquierdo */
     color: #555; /* Color del texto de la lista */
+    list-style-type: none;
 }
 
 .receta-detallada ol li {
+    margin-bottom: 1em; /* Espaciado entre los pasos */
+    font-size: 1.2em; /* Tamaño del texto */
+}
+
+.receta-detallada ul {
+    margin-top: 1em; /* Espaciado superior */
+    padding-left: 1.5em; /* Espaciado izquierdo */
+    color: #555; /* Color del texto de la lista */
+  
+}
+
+.receta-detallada ul li {
     margin-bottom: 1em; /* Espaciado entre los pasos */
     font-size: 1.2em; /* Tamaño del texto */
 }
