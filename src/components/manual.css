@@ -36,34 +36,6 @@ header.hidden {
     top: -100px; /* Mueve la barra de navegación hacia arriba cuando se oculta */
 }
 
-/* Íconos flotantes a la izquierda de la pantalla */
-.floating-icons {
-    position: fixed;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.floating-icons a {
-    font-size: 24px;
-    color: #e16f11;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 50%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.floating-icons a:hover {
-    background-color: #ffb584;
-    transform: scale(1.1); /* Ampliar ligeramente al pasar el mouse */
-}
-
-
 header .logo {
     width: 250px; 
     height: 100px;
@@ -578,4 +550,24 @@ header {
     display: flex;
     align-items: flex-start; /* Alinea la imagen y el contenido superior */
 }
+/* Ajustar el estilo de las secciones */
+.iniciar-sesion, .registro {
+    max-width: auto; /* Ajusta el ancho máximo según sea necesario */
+    margin: 20px auto; /* Centra la sección y agrega espacio arriba y abajo */
+    padding: 2em; /* Ajusta el padding */
+    background-color: #fff; /* Color de fondo para distinguir la sección */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
 
+/* Centrar títulos */
+.iniciar-sesion h2, .registro h2,
+.iniciar-sesion h3, .registro h3 {
+    text-align: center; /* Centra los títulos */
+    color: #e16f11; /* Color del título */
+}
+
+/* Espaciado adicional para los párrafos */
+.iniciar-sesion p, .registro p {
+    text-align: justify; /* Justifica el texto de los párrafos */
+}
