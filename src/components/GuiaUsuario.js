@@ -99,6 +99,7 @@ const ManualUsuario = () => {
                         <li><b>1. Accede a la página de inicio de sesión:</b> Desde la página principal, haz clic en el botón "Iniciar Sesión".</li>
                         <li><b>2. Ingresa tus datos:</b> Introduce tu nombre de usuario y contraseña en los campos correspondientes si ya tenes una cuenta creada.</li>
                         <li><b>3. Haz clic en "Entrar":</b> Si los datos son correctos, serás redirigido a la página principal de la aplicación.</li>
+                        <br></br>
                     </ul>
                     <h3>Errores Comunes</h3>
                     <ul>

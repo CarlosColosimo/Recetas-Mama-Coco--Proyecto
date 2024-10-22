@@ -566,6 +566,7 @@ header {
     text-align: center; /* Centra los títulos */
     color: #e16f11; /* Color del título */
     margin-bottom: 30px;
+    font-size: 30px;
 }
 
 /* Espaciado adicional para los párrafos */
