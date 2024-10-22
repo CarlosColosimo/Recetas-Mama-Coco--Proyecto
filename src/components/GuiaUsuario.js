@@ -1,27 +1,30 @@
 import './manual.css'; // Importar los estilos
-
+import { Carousel } from 'react-responsive-carousel';
 const ManualUsuario = () => {
 
     return (
         <div>
             <section className="indice">
-                <h2>Índice</h2>
-                <ul>
-                    <li><a href="#barra-superior"><i className="fas fa-bars"></i> Barra Superior</a> - Conoce las opciones de navegación.</li>
-                    <li><a href="#inicio-pagina"><i className="fas fa-home"></i> Inicio de la Página</a> - Descubre recetas al azar.</li>
-                    <li><a href="#uso-recetas"><i className="fas fa-receipt"></i> Uso de las Recetas</a> - Aprende a utilizar las recetas.</li>
-                    <li><a href="#consejos-cocina"><i className="fas fa-utensils"></i> Consejos de Cocina</a> - Mejora tus habilidades culinarias.</li>
-                    <li><a href="#preguntas-frecuentes"><i className="fas fa-question-circle"></i> Preguntas Frecuentes</a> - Encuentra respuestas a tus dudas.</li>
-                </ul>
-            </section>
+  <h2>Índice</h2>
+  <div className="indice-botones">
+    <a href="#barra-superior" className="boton-indice">
+      <i className="fas fa-bars"></i> Barra Superior
+    </a>
+    <a href="#inicio-pagina" className="boton-indice">
+      <i className="fas fa-home"></i> Inicio de la Página
+    </a>
+    <a href="#uso-recetas" className="boton-indice">
+      <i className="fas fa-receipt"></i> Uso de las Recetas
+    </a>
+    <a href="#consejos-cocina" className="boton-indice">
+      <i className="fas fa-utensils"></i> Consejos de Cocina
+    </a>
+    <a href="#preguntas-frecuentes" className="boton-indice">
+      <i className="fas fa-question-circle"></i> Preguntas Frecuentes
+    </a>
+  </div>
+</section>
 
-            <div className="floating-icons">
-                <a href="#barra-superior"><i className="fas fa-bars"></i></a>
-                <a href="#inicio-pagina"><i className="fas fa-home"></i></a>
-                <a href="#uso-recetas"><i className="fas fa-receipt"></i></a>
-                <a href="#consejos-cocina"><i className="fas fa-utensils"></i></a>
-                <a href="#preguntas-frecuentes"><i className="fas fa-question-circle"></i></a>
-            </div>
 
             <div className="separador"></div>
 
@@ -40,6 +43,8 @@ const ManualUsuario = () => {
                         <li><b>Interacción:</b> Comenta y califica las recetas para compartir tus experiencias con otros usuarios.</li>
                     </ul>
                 </section>
+            <a href="#top" className="volver-arriba">Volver al inicio</a>
+
 
                 <div className="separador"></div>
                 
@@ -72,6 +77,7 @@ const ManualUsuario = () => {
                     </li>
                 </ul>
             </section>
+            <a href="#top" className="volver-arriba">Volver al inicio</a>
 
             <div className="separador"></div>
 
@@ -105,6 +111,8 @@ const ManualUsuario = () => {
                     <li>Guarda tus recetas favoritas para acceder a ellas más tarde desde tu perfil.</li>
                 </ul>
             </section>
+            <a href="#top" className="volver-arriba">Volver al inicio</a>
+
 
             <div className="separador"></div>
 
@@ -123,6 +131,8 @@ const ManualUsuario = () => {
                     <li><b>Videos Tutoriales:</b> Si una receta tiene un video, puedes seguir visualmente cada paso. Esto es especialmente útil para técnicas de cocina más complejas.</li>
                 </ul>
             </section>
+            <a href="#top" className="volver-arriba">Volver al inicio</a>
+
 
             <div className="separador"></div>
 
@@ -155,6 +165,8 @@ const ManualUsuario = () => {
                 </ul>
             </section>
 
+            <a href="#top" className="volver-arriba">Volver al inicio</a>
+
             <div className="separador"></div>
 
             <section id="preguntas-frecuentes" className="preguntas-frecuentes">
@@ -181,6 +193,10 @@ const ManualUsuario = () => {
                 <ul>
                     <li><b>¿Puedo cambiar mi contraseña?</b> - Sí, puedes cambiar tu contraseña desde la configuración de tu perfil.</li>
                     <li><b>¿Las recetas tienen información nutricional?</b> - Sí, muchas recetas incluyen información sobre calorías y nutrientes.</li>
+                    <li><b>¿Funciona en todos los navegadores?</b> - Sí, la pagina corre en todos los navegadores actuales.</li>
+                    <li><b>¿Son obligatorio los ingredientes?</b> - Sí, para que la recetasalga tal cual se necesita todo lo pedido en la seccion de ingredientres.</li>
+                    <li><b>¿Es necesario tener una cuenta para ver las recetas?</b> - No, puedes navegar y ver las recetas sin registrarte, pero necesitarás una cuenta si deseas guardarlas o personalizarlas.</li>
+
                 </ul>
             </section>        
         </section>
