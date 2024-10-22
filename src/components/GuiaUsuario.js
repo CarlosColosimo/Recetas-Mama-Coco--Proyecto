@@ -45,8 +45,6 @@ const ManualUsuario = () => {
                     <ul>
                         <li><b>Exploración de Recetas:</b> Navega por una amplia selección de recetas que se ajustan a tus preferencias y necesidades.</li>
                         <li><b>Detalles de la Receta:</b> Cada receta incluye una lista de ingredientes, instrucciones detalladas y consejos útiles para lograr el mejor resultado.</li>
-                        <li><b>Favoritos:</b> Guarda tus recetas favoritas para acceder a ellas fácilmente en el futuro.</li>
-                        <li><b>Interacción:</b> Comenta y califica las recetas para compartir tus experiencias con otros usuarios.</li>
                     </ul>
                 </section>
                 <a href="#top" className="volver-arriba">Volver al inicio</a>
@@ -65,11 +63,6 @@ const ManualUsuario = () => {
                             <img src="./img/icono_inicio.jpg" alt="Icono Inicio" className="icono-nav" id="ini" />
                             <b>Inicio:</b>
                             <p>Te llevará al inicio de la página donde podrás ver las recetas destacadas y novedades.</p>
-                        </li>
-                        <li>
-                            <img src="./img/icono_recetas.jpg" alt="Icono Recetas" className="icono-nav" id="rece" />
-                            <b>Recetas:</b>
-                            <p>Accede a una sección donde podrás elegir entre diferentes recetas clasificadas por tipo y ocasión.</p>
                         </li>
                         <li>
                             <img src="./img/icono_login.jpg" alt="Icono Iniciar Sesión" className="icono-nav" id="log" />
@@ -93,7 +86,7 @@ const ManualUsuario = () => {
                     <h2>Iniciar Sesión</h2>
                     <p>Sigue los siguientes pasos para iniciar sesión en la aplicación:</p>
 
-                    <img src="./img/Picture3.png" alt="Inicio de sesion"/>
+                    <img src="./img/Picture3.png" alt="Inicio de sesion" />
 
                     <ul>
                         <li><b>1. Accede a la página de inicio de sesión:</b> Desde la página principal, haz clic en el botón "Iniciar Sesión".</li>
@@ -116,7 +109,7 @@ const ManualUsuario = () => {
                 <section id="registro" className="registro">
                     <h2>Registro</h2>
                     <p>Para registrarte en la aplicación, sigue estos pasos:</p>
-                    <img src="./img/Picture4.jpeg" alt="Registro"/>
+                    <img src="./img/Picture4.jpeg" alt="Registro" />
                     <ul>
                         <br></br>
                         <li><b>1. Haz clic en "Registrar":</b> Desde la pantalla de inicio de sesión, selecciona la opción "Registrar".</li>
@@ -135,128 +128,131 @@ const ManualUsuario = () => {
 
                 <a href="#top" className="volver-arriba">Volver al inicio</a>
 
-            <div className="separador"></div>
+                <div className="separador"></div>
 
-            <section id="inicio-pagina" className="inicio-pagina">
-                <h2>Inicio de la Página</h2>
-                <p>En esta sección verás recetas al azar según la hora del día. Al seleccionar una receta, serás llevado a los detalles de la misma.</p>
-                
-                <h3>Recetas por Hora del Día</h3>
-                <p>Las recetas que se muestran en la página principal están organizadas según la hora del día:</p>
-                <ul>
-                    <li><b>Desayuno:</b> Recetas ligeras y energéticas para comenzar el día.</li>
-                    <li><b>Almuerzo:</b> Comidas más completas para una alimentación balanceada durante el mediodía.</li>
-                    <li><b>Cena:</b> Recetas más ligeras o rápidas para terminar el día.</li>
-                    <li><b>Postres y Snacks:</b> Opciones dulces y saladas para cualquier momento.</li>
-                </ul>
-                
-                <h3>Cómo Navegar por las Recetas</h3>
-                <p>Para explorar las recetas desde la página principal, sigue estos pasos:</p>
-                <ul>
-                    <li>Desplázate hacia abajo en la página para ver las recetas disponibles.</li>
-                    <li>Haz clic en la receta que te llame la atención.</li>
-                    <li>Serás llevado a una página con los detalles de la receta, incluidos ingredientes y el paso a paso.</li>
-                    <li>Si deseas volver al inicio, puedes hacer clic en el logo de la parte superior o usar el botón de "Volver al Inicio".</li>
-                </ul>
-                
-                <h3>Consejos para Seleccionar Recetas</h3>
-                <ul>
-                    <li>Prueba recetas diferentes para cada momento del día y amplía tu repertorio culinario.</li>
-                    <li>Si tienes tiempo limitado, busca recetas con tiempos de preparación cortos.</li>
-                    <li>Guarda tus recetas favoritas para acceder a ellas más tarde desde tu perfil.</li>
-                </ul>
-            </section>
+                <section id="inicio-pagina" className="inicio-pagina">
+                    <h2>Inicio de la Página</h2>
+                    <p>En esta sección verás recetas segun tus necesidades. Al seleccionar una receta, serás llevado a los detalles de la misma.</p>
+
+                    <h3>Recetas dependiendo que busques</h3>
+                    <p>Las recetas que se muestran en la página principal están organizadas según la alimentacion que necesites:</p>
+                    <ul>
+                        <li><b>General:</b> Recetas comunes que se suelen hacer en cualquier casa, ideales para la familia y ocasiones cotidianas.</li>
+                        <li><b>Celiacos:</b> Comidas más complejas, dirigidas a personas con enfermedad celíaca que requieren recetas sin gluten, como pastas de arroz o pizzas con masa de garbanzos.</li>
+                        <li><b>No lacteon:</b> Platos adecuados para quienes son intolerantes a la lactosa, como risotto de champiñones o ensaladas variadas sin productos lácteos.</li>
+                        <li><b>Veganos:</b> Recetas diseñadas para personas que siguen una dieta vegana, como hamburguesas de lentejas o mousse de aguacate y cacao.</li>
+                        <li><b>Diabéticos:</b> Opciones saludables y bajas en azúcares, como ensaladas con pollo a la parrilla o batidos de frutas bajas en azúcar, dirigidas a personas con diabetes.</li>
+                        <li><b>Vegetarianos:</b> Comidas para quienes no consumen carne, como lasañas de verduras o quinoa con verduras asadas.</li>
+
+
+                    </ul>
+
+                    <h3>Cómo Navegar por las Recetas</h3>
+                    <p>Para explorar las recetas desde la página principal, sigue estos pasos:</p>
+                    <ul>
+                        <li>Desplázate hacia abajo en la página para ver las recetas disponibles.</li>
+                        <li>Haz clic en la receta que te llame la atención.</li>
+                        <li>Serás llevado a una página con los detalles de la receta, incluidos ingredientes y el paso a paso.</li>
+                        <li>Si deseas volver al inicio, puedes hacer clic en el logo de la parte superior o usar el botón de "Volver al Inicio".</li>
+                    </ul>
+
+                    <h3>Consejos para Seleccionar Recetas</h3>
+                    <ul>
+                        <li>Prueba recetas diferentes para cada momento del día y amplía tu repertorio culinario.</li>
+                        <li>Si tienes tiempo limitado, busca recetas con tiempos de preparación cortos.</li>
+                    </ul>
+                </section>
+                <a href="#top" className="volver-arriba">Volver al inicio</a>
+
+
+                <div className="separador"></div>
+
+                <section id="uso-recetas" className="uso-recetas">
+                    <h2>Uso de las Recetas</h2>
+                    <p>Cada receta incluye una lista de ingredientes y un paso a paso detallado. Asegúrate de seguir las instrucciones para obtener los mejores resultados. Si alguna receta tiene un video, no dudes en verlo para obtener una guía visual.</p>
+
+                    <h3>Elementos de una Receta</h3>
+                    <ul>
+                        <li><b>Ingredientes:</b> Todos los ingredientes necesarios para la receta se listan claramente. Asegúrate de tener todos ellos antes de comenzar.</li>
+                        <li><b>Instrucciones:</b> Las instrucciones son paso a paso, asegurando que cada etapa esté bien explicada para facilitar la preparación del plato.</li>
+                        <li><b>Tiempo de Preparación:</b> Indica cuánto tiempo tomarás para preparar la receta y el tiempo de cocción, lo que te ayuda a planificar tus comidas.</li>
+                        <li><b>Porciones:</b> La cantidad de porciones que la receta produce, lo que es útil para planificar comidas familiares o cenas con amigos.</li>
+                        <li><b>Nivel de Dificultad:</b> Algunas recetas indican si son fáciles, intermedias o difíciles, lo que te ayuda a elegir según tu habilidad en la cocina.</li>
+                        <li><b>Consejos Adicionales:</b> Muchas recetas incluyen consejos útiles, como sustituciones de ingredientes o métodos alternativos de cocción.</li>
+                        <li><b>Videos Tutoriales:</b> Si una receta tiene un video, puedes seguir visualmente cada paso. Esto es especialmente útil para técnicas de cocina más complejas.</li>
+                    </ul>
+                </section>
+                <a href="#top" className="volver-arriba">Volver al inicio</a>
+
+
+                <div className="separador"></div>
+
+                <section id="consejos-cocina" className="consejos-cocina">
+                    <h2>Consejos de Cocina</h2>
+                    <p>Aquí hay algunos consejos para mejorar tus habilidades culinarias:</p>
+
+                    <ul>
+                        <li><b>Lee toda la receta:</b> Antes de comenzar, asegúrate de tener todos los ingredientes y utensilios necesarios.</li>
+                        <li><b>Mise en Place:</b> Prepara todos los ingredientes antes de comenzar a cocinar. Esto te ayudará a que el proceso sea más fluido.</li>
+                        <li><b>Experimenta:</b> No dudes en adaptar las recetas a tu gusto personal. ¡Cocinar es un arte!</li>
+                        <li><b>Conserva tus sobras:</b> Si te sobra comida, guárdala en recipientes herméticos para disfrutarla más tarde.</li>
+                    </ul>
+
+                    <h3>Consejos Adicionales</h3>
+                    <p>Además de los consejos anteriores, aquí hay algunas recomendaciones que pueden ayudarte a mejorar aún más en la cocina:</p>
+                    <ul>
+                        <li>Utiliza utensilios de cocina de calidad para facilitar el proceso.</li>
+                        <li>Haz limpieza mientras cocinas para mantener tu espacio organizado.</li>
+                        <li>Prueba nuevas técnicas de cocina, como asar, hervir o saltear.</li>
+                        <li>Siempre prueba tu comida a medida que cocinas para ajustar el sazón.</li>
+                    </ul>
+
+                    <h3>Recursos Útiles</h3>
+                    <p>Considera consultar los siguientes recursos para aprender más sobre técnicas de cocina:</p>
+                    <ul>
+                        <li><a href="https://www.ejemplo.com" target="_blank" rel="noopener noreferrer">Técnicas de Cocina para Principiantes</a></li>
+                        <li><a href="https://www.ejemplo.com" target="_blank" rel="noopener noreferrer">Guía de Utensilios de Cocina</a></li>
+                        <li><a href="https://www.ejemplo.com" target="_blank" rel="noopener noreferrer">Recursos de Conservación de Alimentos</a></li>
+                    </ul>
+                </section>
+
+                <a href="#top" className="volver-arriba">Volver al inicio</a>
+
+                <div className="separador"></div>
+
+                <section id="preguntas-frecuentes" className="preguntas-frecuentes">
+                    <h2>Preguntas Frecuentes</h2>
+                    <p>Consulta estas preguntas frecuentes para resolver cualquier duda que tengas:</p>
+
+                    <ul>
+                        <li><b>¿Cómo puedo registrarme?</b> - Haz clic en "Iniciar Sesión" y luego en "Registrar" para crear una cuenta nueva.</li>
+                        <li><b>¿Puedo guardar mis recetas favoritas?</b> - Sí, una vez que inicies sesión, podrás guardar tus recetas favoritas en tu perfil.</li>
+                        <li><b>¿Hay una app móvil?</b> - Actualmente, el sitio está optimizado para dispositivos móviles, pero no hay una app específica.</li>
+                        <li><b>¿Cómo puedo contactar al soporte?</b> - Puedes encontrar nuestra información de contacto en la parte inferior de la página.</li>
+                    </ul>
+
+                    <h3>Consejos para el Uso del Soporte</h3>
+                    <p>Si necesitas ayuda adicional, aquí hay algunos consejos para utilizar el soporte:</p>
+                    <ul>
+                        <li>Ten listo tu nombre de usuario y dirección de correo electrónico al contactar al soporte.</li>
+                        <li>Describe tu problema de manera clara y concisa para que el equipo de soporte pueda ayudarte mejor.</li>
+                        <li>Revisa las secciones de ayuda en el sitio antes de contactar, ya que muchas preguntas comunes tienen respuestas allí.</li>
+                    </ul>
+
+                    <h3>Más Preguntas Frecuentes</h3>
+                    <p>Si tienes más preguntas, no dudes en consultarlas. Aquí algunas adicionales:</p>
+                    <ul>
+                        <li><b>¿Puedo cambiar mi contraseña?</b> - Sí, puedes cambiar tu contraseña desde la configuración de tu perfil.</li>
+                        <li><b>¿Las recetas tienen información nutricional?</b> - Sí, muchas recetas incluyen información sobre calorías y nutrientes.</li>
+                        <li><b>¿Funciona en todos los navegadores?</b> - Sí, la pagina corre en todos los navegadores actuales.</li>
+                        <li><b>¿Son obligatorio los ingredientes?</b> - Sí, para que la recetasalga tal cual se necesita todo lo pedido en la seccion de ingredientres.</li>
+                        <li><b>¿Es necesario tener una cuenta para ver las recetas?</b> - No, puedes navegar y ver las recetas sin registrarte, pero necesitarás una cuenta si deseas guardarlas o personalizarlas.</li>
+
+                    </ul>
+                </section>
+            </section >
+
             <a href="#top" className="volver-arriba">Volver al inicio</a>
-
-
-            <div className="separador"></div>
-
-            <section id="uso-recetas" className="uso-recetas">
-                <h2>Uso de las Recetas</h2>
-                <p>Cada receta incluye una lista de ingredientes y un paso a paso detallado. Asegúrate de seguir las instrucciones para obtener los mejores resultados. Si alguna receta tiene un video, no dudes en verlo para obtener una guía visual.</p>
-                
-                <h3>Elementos de una Receta</h3>
-                <ul>
-                    <li><b>Ingredientes:</b> Todos los ingredientes necesarios para la receta se listan claramente. Asegúrate de tener todos ellos antes de comenzar.</li>
-                    <li><b>Instrucciones:</b> Las instrucciones son paso a paso, asegurando que cada etapa esté bien explicada para facilitar la preparación del plato.</li>
-                    <li><b>Tiempo de Preparación:</b> Indica cuánto tiempo tomarás para preparar la receta y el tiempo de cocción, lo que te ayuda a planificar tus comidas.</li>
-                    <li><b>Porciones:</b> La cantidad de porciones que la receta produce, lo que es útil para planificar comidas familiares o cenas con amigos.</li>
-                    <li><b>Nivel de Dificultad:</b> Algunas recetas indican si son fáciles, intermedias o difíciles, lo que te ayuda a elegir según tu habilidad en la cocina.</li>
-                    <li><b>Consejos Adicionales:</b> Muchas recetas incluyen consejos útiles, como sustituciones de ingredientes o métodos alternativos de cocción.</li>
-                    <li><b>Videos Tutoriales:</b> Si una receta tiene un video, puedes seguir visualmente cada paso. Esto es especialmente útil para técnicas de cocina más complejas.</li>
-                </ul>
-            </section>
-            <a href="#top" className="volver-arriba">Volver al inicio</a>
-
-
-            <div className="separador"></div>
-
-            <section id="consejos-cocina" className="consejos-cocina">
-                <h2>Consejos de Cocina</h2>
-                <p>Aquí hay algunos consejos para mejorar tus habilidades culinarias:</p>
-                
-                <ul>
-                    <li><b>Lee toda la receta:</b> Antes de comenzar, asegúrate de tener todos los ingredientes y utensilios necesarios.</li>
-                    <li><b>Mise en Place:</b> Prepara todos los ingredientes antes de comenzar a cocinar. Esto te ayudará a que el proceso sea más fluido.</li>
-                    <li><b>Experimenta:</b> No dudes en adaptar las recetas a tu gusto personal. ¡Cocinar es un arte!</li>
-                    <li><b>Conserva tus sobras:</b> Si te sobra comida, guárdala en recipientes herméticos para disfrutarla más tarde.</li>
-                </ul>
-                
-                <h3>Consejos Adicionales</h3>
-                <p>Además de los consejos anteriores, aquí hay algunas recomendaciones que pueden ayudarte a mejorar aún más en la cocina:</p>
-                <ul>
-                    <li>Utiliza utensilios de cocina de calidad para facilitar el proceso.</li>
-                    <li>Haz limpieza mientras cocinas para mantener tu espacio organizado.</li>
-                    <li>Prueba nuevas técnicas de cocina, como asar, hervir o saltear.</li>
-                    <li>Siempre prueba tu comida a medida que cocinas para ajustar el sazón.</li>
-                </ul>
-                
-                <h3>Recursos Útiles</h3>
-                <p>Considera consultar los siguientes recursos para aprender más sobre técnicas de cocina:</p>
-                <ul>
-                    <li><a href="https://www.ejemplo.com" target="_blank" rel="noopener noreferrer">Técnicas de Cocina para Principiantes</a></li>
-                    <li><a href="https://www.ejemplo.com" target="_blank" rel="noopener noreferrer">Guía de Utensilios de Cocina</a></li>
-                    <li><a href="https://www.ejemplo.com" target="_blank" rel="noopener noreferrer">Recursos de Conservación de Alimentos</a></li>
-                </ul>
-            </section>
-
-            <a href="#top" className="volver-arriba">Volver al inicio</a>
-
-            <div className="separador"></div>
-
-            <section id="preguntas-frecuentes" className="preguntas-frecuentes">
-                <h2>Preguntas Frecuentes</h2>
-                <p>Consulta estas preguntas frecuentes para resolver cualquier duda que tengas:</p>
-                
-                <ul>
-                    <li><b>¿Cómo puedo registrarme?</b> - Haz clic en "Iniciar Sesión" y luego en "Registrar" para crear una cuenta nueva.</li>
-                    <li><b>¿Puedo guardar mis recetas favoritas?</b> - Sí, una vez que inicies sesión, podrás guardar tus recetas favoritas en tu perfil.</li>
-                    <li><b>¿Hay una app móvil?</b> - Actualmente, el sitio está optimizado para dispositivos móviles, pero no hay una app específica.</li>
-                    <li><b>¿Cómo puedo contactar al soporte?</b> - Puedes encontrar nuestra información de contacto en la parte inferior de la página.</li>
-                </ul>
-                
-                <h3>Consejos para el Uso del Soporte</h3>
-                <p>Si necesitas ayuda adicional, aquí hay algunos consejos para utilizar el soporte:</p>
-                <ul>
-                    <li>Ten listo tu nombre de usuario y dirección de correo electrónico al contactar al soporte.</li>
-                    <li>Describe tu problema de manera clara y concisa para que el equipo de soporte pueda ayudarte mejor.</li>
-                    <li>Revisa las secciones de ayuda en el sitio antes de contactar, ya que muchas preguntas comunes tienen respuestas allí.</li>
-                </ul>
-                
-                <h3>Más Preguntas Frecuentes</h3>
-                <p>Si tienes más preguntas, no dudes en consultarlas. Aquí algunas adicionales:</p>
-                <ul>
-                    <li><b>¿Puedo cambiar mi contraseña?</b> - Sí, puedes cambiar tu contraseña desde la configuración de tu perfil.</li>
-                    <li><b>¿Las recetas tienen información nutricional?</b> - Sí, muchas recetas incluyen información sobre calorías y nutrientes.</li>
-                    <li><b>¿Funciona en todos los navegadores?</b> - Sí, la pagina corre en todos los navegadores actuales.</li>
-                    <li><b>¿Son obligatorio los ingredientes?</b> - Sí, para que la recetasalga tal cual se necesita todo lo pedido en la seccion de ingredientres.</li>
-                    <li><b>¿Es necesario tener una cuenta para ver las recetas?</b> - No, puedes navegar y ver las recetas sin registrarte, pero necesitarás una cuenta si deseas guardarlas o personalizarlas.</li>
-
-                </ul>
-            </section>        
-        </section >
-
-    <a href="#top" className="volver-arriba">Volver al inicio</a>
         </div >
     );
 };
