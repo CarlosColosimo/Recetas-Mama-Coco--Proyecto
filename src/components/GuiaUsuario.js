@@ -92,14 +92,17 @@ const ManualUsuario = () => {
                 <section id="iniciar-sesion" className="iniciar-sesion">
                     <h2>Iniciar Sesión</h2>
                     <p>Sigue los siguientes pasos para iniciar sesión en la aplicación:</p>
+
+                    <img src="./img/Picture3.png" alt="Inicio de sesion"/>
+
                     <ul>
                         <li><b>1. Accede a la página de inicio de sesión:</b> Desde la página principal, haz clic en el botón "Iniciar Sesión".</li>
-                        <li><b>2. Ingresa tus credenciales:</b> Introduce tu nombre de usuario y contraseña en los campos correspondientes.</li>
-                        <li><b>3. Haz clic en "Entrar":</b> Si las credenciales son correctas, serás redirigido a la página principal de la aplicación.</li>
+                        <li><b>2. Ingresa tus datos:</b> Introduce tu nombre de usuario y contraseña en los campos correspondientes si ya tenes una cuenta creada.</li>
+                        <li><b>3. Haz clic en "Entrar":</b> Si los datos son correctos, serás redirigido a la página principal de la aplicación.</li>
                     </ul>
                     <h3>Errores Comunes</h3>
                     <ul>
-                        <li><b>Usuario o contraseña incorrectos:</b> Verifica que tus datos sean correctos e inténtalo nuevamente.</li>
+                        <li><b>Usuario o contraseña incorrectos:</b> Verifica que tus datos sean correctos e inténtalo nuevamente, es recomendable que los anotes en algun lugar.</li>
                         <li><b>Campo vacío:</b> Asegúrate de completar ambos campos antes de iniciar sesión.</li>
                     </ul>
                 </section>
@@ -112,11 +115,13 @@ const ManualUsuario = () => {
                 <section id="registro" className="registro">
                     <h2>Registro</h2>
                     <p>Para registrarte en la aplicación, sigue estos pasos:</p>
+                    <img src="./img/Picture4.jpeg" alt="Registro"/>
                     <ul>
+                        <br></br>
                         <li><b>1. Haz clic en "Registrar":</b> Desde la pantalla de inicio de sesión, selecciona la opción "Registrar".</li>
                         <li><b>2. Completa los campos:</b> Ingresa tu nombre de usuario, correo electrónico, contraseña y confirma la contraseña.</li>
                         <li><b>3. Asegúrate de que las contraseñas coincidan:</b> Si las contraseñas no coinciden, aparecerá un mensaje de error.</li>
-                        <li><b>4. Haz clic en "Crear cuenta":</b> Si todos los datos son correctos, serás redirigido al formulario de inicio de sesión para acceder con tu nueva cuenta.</li>
+                        <li><b>4. Haz clic en "Registrarse":</b> Si todos los datos son correctos, serás redirigido al formulario de inicio de sesión para acceder con tu nueva cuenta.</li>
                     </ul>
                     <h3>Errores Comunes</h3>
                     <ul>
