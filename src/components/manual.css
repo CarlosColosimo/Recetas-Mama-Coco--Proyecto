@@ -182,45 +182,6 @@ header {
     margin: 20px 0;
 }
 
-.infocontacto {
-    padding: 3em;
-    background-color: #f4f4f4;
-    text-align: left;
-}
-
-.infocontacto .contacto {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.infocontacto .logofooter {
-    width: 250px; 
-    margin-bottom: 1em;
-}
-
-.infocontacto .logofooter img {
-    width: 100%;
-}
-
-.infocontacto .informacion ul {
-    list-style: none;
-    padding-left: 0;
-
-}
-
-.infocontacto .informacion ul li {
-    margin-bottom: 12px;
-    font-size: 18px; 
-    color: #333;
-}
-
-.infocontacto .informacion ul li i {
-    margin-right: 10px;
-    color: #ff6b6b;
-}
-
 .indice {
     margin-top: 120px;
     padding: 2em;
@@ -252,6 +213,7 @@ header {
     transition: background-color 0.3s ease;
     display: inline-flex;
     align-items: center;
+    width: 300px;
     gap: 5px; /* Espacio entre el ícono y el texto */
   }
   
@@ -612,3 +574,8 @@ header {
 .guia-usuario b {
     color: #e16f11; /* Color para el texto en negrita */
 }
+.indice-contenido {
+    display: flex;
+    align-items: flex-start; /* Alinea la imagen y el contenido superior */
+}
+
