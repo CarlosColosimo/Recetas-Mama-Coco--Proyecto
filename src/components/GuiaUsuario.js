@@ -122,6 +122,7 @@ const ManualUsuario = () => {
                         <li><b>2. Completa los campos:</b> Ingresa tu nombre de usuario, correo electrónico, contraseña y confirma la contraseña.</li>
                         <li><b>3. Asegúrate de que las contraseñas coincidan:</b> Si las contraseñas no coinciden, aparecerá un mensaje de error.</li>
                         <li><b>4. Haz clic en "Registrarse":</b> Si todos los datos son correctos, serás redirigido al formulario de inicio de sesión para acceder con tu nueva cuenta.</li>
+                        <br></br>
                     </ul>
                     <h3>Errores Comunes</h3>
                     <ul>
