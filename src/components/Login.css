@@ -139,46 +139,6 @@ input[type="checkbox"] {
     transform: scale(1.05); /* Aplica el zoom a toda la tarjeta */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para dar efecto de profundidad */
 }
-
-.infocontacto {
-    padding: 3em;
-    background-color: #f4f4f4;
-    text-align: left;
-}
-
-.infocontacto .contacto {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.infocontacto .logofooter {
-    width: 250px; 
-    margin-bottom: 1em;
-}
-
-.infocontacto .logofooter img {
-    width: 100%;
-}
-
-.infocontacto .informacion ul {
-    list-style: none;
-    padding-left: 0;
-
-}
-
-.infocontacto .informacion ul li {
-    margin-bottom: 12px;
-    font-size: 18px; 
-    color: #333;
-}
-
-.infocontacto .informacion ul li i {
-    margin-right: 10px;
-    color: #ff6b6b;
-}
-
 .input-container {
     margin-bottom: 20px; /* Espacio entre los campos */
 }
@@ -193,7 +153,7 @@ input[type="checkbox"] {
 
 .input-wrapper i {
     margin-right: 10px; /* Espacio entre el ícono y el input */
-    color: #666; /* Color del ícono */
+    color: #999; /* Color del ícono */
 }
 
 input[type="text"],
@@ -203,3 +163,25 @@ input[type="password"] {
     flex: 1; /* Permitir que el input ocupe el resto del espacio */
     font-size: 1em; /* Tamaño de fuente */
 }
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: none; /* Elimina el borde */
+
+    font-size: 16px; /* Tamaño de fuente */
+  }
+  /* Estilo adicional si es necesario */
+.error-message {
+    color: red;
+    font-size: 14px;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 14px;
+  }
+  .input-field:focus {
+    outline: none; /* Elimina el contorno por defecto */
+    box-shadow: none; /* Opcional: Elimina la sombra o cambia a lo que prefieras */
+    /* También puedes agregar un estilo diferente aquí si lo deseas */
+  }

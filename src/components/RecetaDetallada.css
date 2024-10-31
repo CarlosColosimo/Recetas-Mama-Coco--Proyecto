@@ -1,45 +1,84 @@
 .receta-detallada {
     padding: 2em;
-    margin: 2em auto; /* Centra el contenido */
-    max-width: 800px; /* Limita el ancho */
-    background-color: #f9f9f9; /* Color de fondo */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    margin-top: 120px; /* Agrega un margen superior para separación */
+    margin: 2em auto;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 120px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.receta-detallada:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .receta-detallada h1 {
-    font-size: 2.5em; /* Tamaño del título */
-    color: #333; /* Color del texto */
-    margin-bottom: 0.5em; /* Espaciado inferior */
+    font-size: 2.5em;
+    color: #e16f11;
+    margin-bottom: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .receta-detallada h2 {
-    font-size: 1.8em; /* Tamaño del subtítulo */
-    color: #e16f11; /* Color del subtítulo */
-    margin-top: 1.5em; /* Espaciado superior */
+    font-size: 1.8em;
+    color: #e16f11;
+    margin-top: 1.5em;
+    border-bottom: 2px solid #e16f11;
+    padding-bottom: 0.2em;
+}
+
+.receta-detallada ul,
+.receta-detallada ol {
+    margin-top: 1em;
+    padding-left: 1.5em;
+    color: #555;
+    list-style: none;
+}
+
+.receta-detallada ul li,
+.receta-detallada ol li {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    background-color: #f9f9f9;
+    padding: 0.8em;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.receta-detallada ul li:hover,
+.receta-detallada ol li:hover {
+    background-color: #f3f3f3;
+}
+
+.receta-detallada ul li::before,
+.receta-detallada ol li::before {
+    content: "";
+    color: #e16f11;
+    font-weight: bold;
 }
 
 .receta-detallada ol {
-    margin-top: 1em; /* Espaciado superior */
-    padding-left: 1.5em; /* Espaciado izquierdo */
-    color: #555; /* Color del texto de la lista */
-    list-style-type: none;
+    counter-reset: step-counter;
 }
 
 .receta-detallada ol li {
-    margin-bottom: 1em; /* Espaciado entre los pasos */
-    font-size: 1.2em; /* Tamaño del texto */
+    position: relative;
+    padding-left: 1.5em;
 }
 
-.receta-detallada ul {
-    margin-top: 1em; /* Espaciado superior */
-    padding-left: 1.5em; /* Espaciado izquierdo */
-    color: #555; /* Color del texto de la lista */
-  
-}
-
-.receta-detallada ul li {
-    margin-bottom: 1em; /* Espaciado entre los pasos */
-    font-size: 1.2em; /* Tamaño del texto */
+.receta-detallada ol li::before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    position: absolute;
+    left: 0;
+    background-color: #e16f11;
+    color: white;
+    font-size: 1em;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 1.5em;
 }

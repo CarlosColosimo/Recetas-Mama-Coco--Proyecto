@@ -106,6 +106,8 @@ header ul li a:hover {
     box-sizing: border-box; /* Asegura que el padding y border no afecten el ancho */
 }
 
+
+
 .receta {
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -138,46 +140,79 @@ header ul li a:hover {
     .carrusel-container {
         width: 100%; /* En pantallas pequeñas, los carruseles ocupan toda la fila */
     }
+    
+}
+.footer {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 2em 0;
+    text-align: center;
 }
 
-.infocontacto {
-    padding: 3em;
-    background-color: #f4f4f4;
-    text-align: left;
-}
-
-.infocontacto .contacto {
+.footer-content {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-}
-
-.infocontacto .logofooter {
-    width: 250px; 
     margin-bottom: 1em;
 }
 
-.infocontacto .logofooter img {
-    width: 100%;
+.logofooter img {
+    max-width: 150px; /* Ajusta según sea necesario */
 }
 
-.infocontacto .informacion ul {
+.informacion ul {
     list-style: none;
-    padding-left: 0;
-
+    padding: 0;
 }
 
-.infocontacto .informacion ul li {
-    margin-bottom: 12px;
-    font-size: 18px; 
-    color: #333;
+.informacion li {
+    margin: 0.5em 0;
+    display: flex;
+}
+.informacion li i {
+    margin-right: 8px; /* Espacio entre icono y texto */
 }
 
-.infocontacto .informacion ul li i {
-    margin-right: 10px;
-    color: #ff6b6b;
+.footer-links {
+    margin: 1em 0;
 }
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 1em;
+}
+
+.footer-links a {
+    color: #e16f11; /* Color del enlace */
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Efecto hover */
+}
+
+.social-media {
+    margin: 1em 0;
+}
+
+.social-media a {
+    margin: 0 1em;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444; /* Línea superior */
+    padding-top: 1em;
+    font-size: 0.8em;
+}
+
 
 /* Estilo para los enlaces */
 a {

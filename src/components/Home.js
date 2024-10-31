@@ -36,20 +36,35 @@ const Prueba = () => {
         Celiaco: [
           {
             nombre: 'Pizza Celiaca',
-            img: './img/pizza.jpg',
+            img: './img/gluten.jpeg',
             descripcion: 'Pizza celiaca con cebolla.',
+          },
+          {
+          nombre: 'Ensalada de Quinoa',
+          img:'./img/ensaladaquinoa.jpeg',
+          descripcion:'Ensalada de Quinoa',
+          },
+          {
+            nombre:'Tortilla de maíz',
+            img:'./img/maiz.jpeg',
+            descripcion:'Tortillas de maíz',
           },
         ],
         Vegano: [
           {
-            nombre: 'Ensalada Vegana',
+            nombre: 'Vegana de Garbanzos y Palta',
             img: './img/ensaladavegana.jpg',
             descripcion: 'Ensalada Vegana.',
           },
           {
-            nombre: 'Tacos Veganos',
+            nombre: 'Tacos con Coliflor y Garbanzos',
             img: './img/tacosveganos.jpg',
             descripcion: 'Tacos veganos.',
+          },
+          {
+          nombre:'Hamburguesa de Lentejas',
+          img:'./img/hamburglentejas.jpeg',
+          descripcion:'Burguer de lentejas',
           },
         ],
         Vegetariano: [
@@ -58,20 +73,55 @@ const Prueba = () => {
               img: './img/pastaprimavera.jpg',
               descripcion: 'Pasta primavera casera.',
             },
+            {
+              nombre: 'Risotto de Champiñones',
+              img:'./img/risotto.jpeg',
+              descripcion: 'Risotto de Champiñones',
+            },
+            {
+              nombre:'Frittata de Verduras',
+              img:'./img/frittata.jpeg',
+              descripcion:'contiene verduras',
+            },
           ],
         Diabetico: [
             {
               nombre: 'Ensalada de Quinoa',
               img: './img/ensaladaquinoa.jpeg',
-              descripcion: 'Ensalada de Quinoa saludable.',
+              descripcion: 'Ensalada de Quinoa.',
+            },
+            {
+             nombre:'Salmón al Horno con Verduras',
+             img:'./img/salmon.jpeg',
+             descripcion:'Salmón al horno',
+            },
+            {
+             nombre:'Morrones Rellenos de Pollo y Vegetales',
+             img:'./img/pollo relleno.jpeg',
+             descripcion:'',
             },
           ],
-        NoLacteos: [
+        Postres: [
             {
-                nombre:'Pan Lactal',
-                img: './img/panlactal.jpg',
-                descripcion:'pan LACTAL ',
-            }
+              nombre:'Flan',
+              img: './img/flan.jpeg',
+              descripcion:'Flan casero ',
+            },
+            {
+              nombre: 'Budín de Pan',
+              img: './img/budinPan.jpeg',
+              descripcion: 'Budín de Pan',
+            },
+            {
+              nombre:'Gelatina',
+              img:'./img/gelatina.jpeg',
+              descripcion:'Gelatina',
+            },
+            {
+              nombre: 'Tiramisú',
+              img:'./img/tiramisu.jpeg',
+              descripcion:'Tiramisú',
+            },
           ],
       };
   
@@ -82,7 +132,7 @@ const Prueba = () => {
       <div className="carruseles">
         {Object.keys(recetas).map((categoria) => (
           <div key={categoria} className="carrusel-container">
-            <h2 className='receta '>{categoria.charAt(0).toUpperCase() + categoria.slice(1)}</h2>
+            <h2 className='receta2 '>{categoria.charAt(0).toUpperCase() + categoria.slice(1)}</h2>
             <Carousel 
               showThumbs={false} 
               infiniteLoop 
