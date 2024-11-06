@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3em; 
+    background-color: rgb(224, 152, 16);
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    width: 250px; 
+    height: 100px;
+}
+
+header .logo img {
+    height: 80px; 
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li {
+    margin-left: 25px; 
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 15px 25px; 
+    color: #333;
+    font-size: 20px; 
+    transition: 0.3s ease;
+    display: block;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+header ul li a:hover {
+    color: white;
+}
+
+.boton {
+    color: #f4f4f4;
+    background-color: #e16f11;
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 1, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el zoom y la sombra */
+}
+
+.boton:hover {
+    transform: scale(1.05); /* Aplica el zoom a toda la tarjeta */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para dar efecto de profundidad */
+}
+
+
+.separador {
+    width: 100%;
+    height: 6px; 
+    background-color:  #e16f11;
+    margin-top: 100px; 
+    z-index: 1000;
+}
+.custom-carousel .carousel .slide {
+    height: auto; /* Permite que la altura del carrusel se ajuste al contenido */
+}
+
+.carruseles {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Permite que los carruseles se ajusten en múltiples filas si es necesario */
+    gap: 20px; /* Añade un espacio entre los carruseles */
+    padding: 20px; /* Añade un padding alrededor del contenedor */
+}
+
+.carrusel-container {
+    width: calc(33.33% - 40px); /* Ajusta el ancho de los carruseles para que se distribuyan en tres columnas */
+    min-width: 250px; /* Establece un ancho mínimo para mantener una buena apariencia */
+    box-sizing: border-box; /* Asegura que el padding y border no afecten el ancho */
+}
+
+.receta {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.receta:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.receta img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+.receta h5 { 
+    font-size:  20px;
+}
+@media (max-width: 900px) {
+    .carrusel-container {
+        width: calc(50% - 40px); /* En pantallas más pequeñas, los carruseles ocupan dos columnas */
+    }
+}
+
+@media (max-width: 600px) {
+    .carrusel-container {
+        width: 100%; /* En pantallas pequeñas, los carruseles ocupan toda la fila */
+    }
+}
+
+.infocontacto {
+    padding: 3em;
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+.infocontacto .contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.infocontacto .logofooter {
+    width: 250px; 
+    margin-bottom: 1em;
+}
+
+.infocontacto .logofooter img {
+    width: 100%;
+}
+
+.infocontacto .informacion ul {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.infocontacto .informacion ul li {
+    margin-bottom: 12px;
+    font-size: 18px; 
+    color: #333;
+}
+
+.infocontacto .informacion ul li i {
+    margin-right: 10px;
+    color: #ff6b6b;
+}
+
+/* Estilo para los enlaces */
+a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del texto del padre */
+}
+
+a:hover {
+    color: #ff7f00; /* Cambia el color al pasar el mouse, puedes ajustarlo a tu preferencia */
+}
